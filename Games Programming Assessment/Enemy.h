@@ -1,9 +1,11 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "TextureManager.h"
+#include "Cloneable.h"
 
 // [NEW FILE] Optimising via Polymorphism
 
-class Enemy
+class Enemy : public ICloneable
 {
 protected:
     sf::Sprite sprite;
