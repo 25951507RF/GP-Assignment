@@ -1,3 +1,5 @@
 #include "Enemy.h"
 
-// Set up Fast Enemy
+Enemy::EnemyNormal(float x, float y)
+{
+}
