@@ -1,5 +1,6 @@
 #pragma once
 
+// [NEW FILE] Clone Management
 
 class ICloneable
 {
