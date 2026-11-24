@@ -5,7 +5,7 @@
 
 // [NEW FILE] Optimising via Polymorphism
 
-class Enemy : public ICloneable
+class Enemy
 {
 protected:
     sf::Sprite sprite;
@@ -14,24 +14,19 @@ protected:
     int health;
 
 public:
-
-    Enemy(float x, float y) :
-        texture("assets/normal_enemy.png"), sprite(texture)
+    
+    Enemy(float x, float y, float speed, int health) : speed(speed)
     {
-        sprite.setTexture(texture, true);
-        sprite.setPosition(sf::Vector2f(x, y));
-        speed = 60.f;
-        health = 10;
+
     }
 
     virtual void update(float deltaTime)
     {
-        sprite.move(sf::Vector2f(0.f, speed * deltaTime));
+        speed = 0;
     }
 
-    void takeDamage()
+    virtual void takeDamage()
     {
-        health -= 10;
     }
 
 };
