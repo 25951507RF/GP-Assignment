@@ -15,7 +15,7 @@ protected:
 
 public:
     
-    Enemy(float x, float y, float speed, int health) : speed(speed)
+    Enemy(float x, float y, float speed, int health, sf::Texture texture) : speed(speed), sprite(texture)
     {
 
     }
