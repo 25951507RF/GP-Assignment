@@ -5,10 +5,8 @@
 class EnemyNormal : public Enemy
 {
     EnemyNormal(float x, float y) 
-        : Enemy(x, y, 60, 10)
+        : Enemy(x, y, 60, 10, sf::Texture("assets/normal_enemy.png"))
     {
-        texture.loadFromFile("assets/normal_enemy.png");
-        sprite.setTexture(texture, true);
     }
 
     void update(float deltaTime) override
