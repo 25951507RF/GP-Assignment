@@ -5,7 +5,7 @@
 
 // [NEW FILE] Optimising via Polymorphism
 
-class Enemy
+class Enemy : ICloneable
 {
 protected:
     sf::Sprite sprite;
